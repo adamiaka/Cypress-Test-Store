@@ -1,0 +1,19 @@
+{
+  "name": "cypress-test-store",
+  "version": "1.0.0",
+  "description": "Automated tests using Cypress on automationteststore.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cypress",
+    "Tests",
+    "Automation"
+  ],
+  "author": "adamiaka",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  }
+}
