@@ -5,6 +5,7 @@ import Navigate from "../support/pageObject/navigate"
 
 describe("Navigate subcategories", () => {
 
+    //Before each test login, after each test log out 
     beforeEach(() => {
         Access.logIn(Cypress.env('login'), Cypress.env('password'))
     })
@@ -12,6 +13,7 @@ describe("Navigate subcategories", () => {
         Access.logOut()
     })
 
+    //Verify if navigation works properly and correct pages are openeda
     it("Appareal and accessories / T-shirt", () => {
         Navigate.apparealTshirts()
         cy.get('.heading1').should("contain", "T-shirt")

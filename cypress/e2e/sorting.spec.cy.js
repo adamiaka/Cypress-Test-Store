@@ -12,6 +12,8 @@ describe("T-shirts filters", () => {
         Access.logOut()
     })
 
+
+    //Verify if item sorting using item price works properly
     it("Price Sorting", () => {
 
         Navigate.apparealTshirts()
@@ -26,6 +28,8 @@ describe("T-shirts filters", () => {
             return prices
         })
     })
+
+    //Verify if item sorting using item name works properly
     it("Name sorting", () => {
         Navigate.apparealTshirts()
         cy.get("#sort").select("Name A - Z")

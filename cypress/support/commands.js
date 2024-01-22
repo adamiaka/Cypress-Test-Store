@@ -26,6 +26,7 @@
 
 /// <reference types="cypress" />
 
+//Command to open homepage listed in in cypress.config.js - 'baseUrl' 
 Cypress.Commands.add('openHome', () => {
     cy.visit('/')
 })

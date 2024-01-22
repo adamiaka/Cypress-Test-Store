@@ -1,6 +1,7 @@
-export class Access{
+export class Access {
 
-    logIn(login, password){
+    //Login to store using provided login and password
+    logIn(login, password) {
         cy.visit("/")
         cy.contains('Login or register').click()
         cy.get('#loginFrm_loginname').type(login)
@@ -10,10 +11,11 @@ export class Access{
         cy.get('#customer_menu_top').should('contain', 'Welcome back')
         cy.visit("/")
 
-        
+
     }
 
-    logOut(){
+    //Logout from store
+    logOut() {
         cy.visit("/")
         cy.get('#customer_menu_top').trigger('mouseover')
         cy.contains('Logoff').click()
