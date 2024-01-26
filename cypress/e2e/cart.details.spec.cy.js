@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import Access from "../support/pageObject/access"
-import Navigate from "../support/pageObject/navigate"
 import VerifyPrice from "../support/pageObject/verifyPrice"
 import BuyRandom from "../support/pageObject/buyRandom"
 import Cart from "../support/pageObject/cart"

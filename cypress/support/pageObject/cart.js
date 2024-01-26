@@ -6,7 +6,7 @@ export class Cart {
             //Iterate through cart table and change all unit prices
             // index 0 is skipped because in this particular table, first row is header without product data
             if (index > 0) {
-                cy.wrap($row).find('[class="form-control short"]').clear().type(`${[Math.floor(Math.random() * 5) + 1]}`, { delay: 100 })
+                cy.wrap($row).find('[class="form-control short"]').clear().type(`${[Math.floor(Math.random() * 4) + 1]}`, { delay: 100 })
             }
         })
         cy.get('#cart_update').click()
